@@ -226,11 +226,11 @@ class PortraitMaster:
                     "max": max_float_value,
                     "step": 0.05
                 }),
-                "makeup": (makeup_list, {
-                    "default": makeup_list[0],
+                "makeup": ("STRING", {
+                    "default": "",
                 }),
-                "beard": (beard_list, {
-                    "default": beard_list[0],
+                "beard": ("STRING", {
+                    "default": "",
                 }),
                 "natural_skin": ("FLOAT", {
                     "default": 0,
