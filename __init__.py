@@ -170,7 +170,7 @@ class PortraitMaster:
                     "max": max_float_value
                 }),
                 "model_pose": ("STRING", {
-                    "default": "Adjusting Clothing Pose",
+                    "default": "",
                 }),
                 "clothes": ("STRING", {
                     "default": "Cocktail Dress",
@@ -179,7 +179,7 @@ class PortraitMaster:
                     "default": "Green",
                 }),
                 "eyes_shape": ("STRING", {
-                    "default": "Hooded Eyes Shape",
+                    "default": "",
                 }),
                 "lips_color": ("STRING", {
                     "default": "Mauve Lips",
