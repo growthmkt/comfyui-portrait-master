@@ -124,117 +124,107 @@ class PortraitMaster:
                 "seed": ("INT", {"forceInput": False}),
             },
             "required": {
-                "shot": (shot_list, {
-                    "default": shot_list[0],
+                "shot": ("STRING", {
+                    "default": "Head portrait",
                 }),
                 "shot_weight": ("FLOAT", {
                     "default": 0,
                     "step": 0.05,
                     "min": 0,
                     "max": max_float_value,
-                    "display": "slider",
                 }),
-                "gender": (gender_list, {
-                    "default": gender_list[0],
+                "gender": ("STRING", {
+                    "default": "MAN",
                 }),
                 "androgynous": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "age": ("INT", {
                     "default": 30,
                     "min": 18,
                     "max": 90,
-                    "step": 1,
-                    "display": "slider",
+                    "step": 1
                 }),
-                "nationality_1": (nationality_list, {
-                    "default": nationality_list[0],
+                "nationality_1": ("STRING", {
+                    "default": "German",
                 }),
-                "nationality_2": (nationality_list, {
-                    "default": nationality_list[0],
+                "nationality_2": ("STRING", {
+                    "default": "German",
                 }),
                 "nationality_mix": ("FLOAT", {
                     "default": 0.5,
                     "min": 0,
                     "max": 1,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
-                "body_type": (body_type_list, {
-                    "default": body_type_list[0],
+                "body_type": ("STRING", {
+                    "default": "Midweight",
                 }),
                 "body_type_weight": ("FLOAT", {
                     "default": 0,
                     "step": 0.05,
                     "min": 0,
-                    "max": max_float_value,
-                    "display": "slider",
+                    "max": max_float_value
                 }),
-                "model_pose": (model_pose_list, {
-                    "default": model_pose_list[0],
+                "model_pose": ("STRING", {
+                    "default": "Adjusting Clothing Pose",
                 }),
-                "clothes": (clothes_list, {
-                    "default": clothes_list[0],
+                "clothes": ("STRING", {
+                    "default": "Cocktail Dress",
                 }),
-
-                "eyes_color": (eyes_color_list, {
-                    "default": eyes_color_list[0],
+                "eyes_color": ("STRING", {
+                    "default": "Green",
                 }),
-                "eyes_shape": (eyes_shape_list, {
-                    "default": eyes_shape_list[0],
+                "eyes_shape": ("STRING", {
+                    "default": "Hooded Eyes Shape",
                 }),
-                "lips_color": (lips_color_list, {
-                    "default": lips_color_list[0],
+                "lips_color": ("STRING", {
+                    "default": "Mauve Lips",
                 }),
-                "lips_shape": (lips_shape_list, {
-                    "default": lips_shape_list[0],
+                "lips_shape": ("STRING", {
+                    "default": "Closed Lips",
                 }),
-                "facial_expression": (facial_expressions_list, {
-                    "default": facial_expressions_list[0],
+                "facial_expression": ("STRING", {
+                    "default": "Content",
                 }),
                 "facial_expression_weight": ("FLOAT", {
                     "default": 0,
                     "step": 0.05,
                     "min": 0,
-                    "max": max_float_value,
-                    "display": "slider",
+                    "max": max_float_value
                 }),
-                "face_shape": (face_shape_list, {
-                    "default": face_shape_list[0],
+                "face_shape": ("STRING", {
+                    "default": "Heart",
                 }),
                 "face_shape_weight": ("FLOAT", {
                     "default": 0,
                     "step": 0.05,
                     "min": 0,
-                    "max": max_float_value,
-                    "display": "slider",
+                    "max": max_float_value
                 }),
                 "facial_asymmetry": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
-                "hair_style": (hair_style_list, {
-                    "default": hair_style_list[0],
+                "hair_style": ("STRING", {
+                    "default": "",
                 }),
-                "hair_color": (hair_color_list, {
-                    "default": hair_color_list[0],
+                "hair_color": ("STRING", {
+                    "default": "",
                 }),
-                "hair_length": (hair_length_list, {
-                    "default": hair_length_list[0],
+                "hair_length": ("STRING", {
+                    "default": "",
                 }),
                 "disheveled": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "makeup": (makeup_list, {
                     "default": makeup_list[0],
@@ -246,133 +236,115 @@ class PortraitMaster:
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "bare_face": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "washed_face": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "dried_face": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "skin_details": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "skin_pores": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "dimples": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "wrinkles": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "freckles": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "moles": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "skin_imperfections": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "skin_acne": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "tanned_skin": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "eyes_details": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "iris_details": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "circular_iris": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "circular_pupil": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
-                "light_type": (light_type_list, {
-                    "default": light_type_list[0],
+                "light_type": ("STRING", {
+                    "default": "",
                 }),
-                "light_direction": (light_direction_list, {
-                    "default": light_direction_list[0],
+                "light_direction": ("STRING", {
+                    "default": "",
                 }),
                 "light_weight": ("FLOAT", {
                     "default": 0,
                     "min": 0,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "photorealism_improvement": (["enable", "disable"],),
                 "prompt_start": ("STRING", {
@@ -391,25 +363,23 @@ class PortraitMaster:
                     "multiline": True,
                     "default": ""
                 }),
-                "style_1": (style_1_list, {
-                    "default": style_1_list[0],
+                "style_1": ("STRING", {
+                    "default": "",
                 }),
                 "style_1_weight": ("FLOAT", {
                     "default": 1.5,
                     "min": 1,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
-                "style_2": (style_2_list, {
-                    "default": style_2_list[0],
+                "style_2": ("STRING", {
+                    "default": "",
                 }),
                 "style_2_weight": ("FLOAT", {
                     "default": 1.5,
                     "min": 1,
                     "max": max_float_value,
-                    "step": 0.05,
-                    "display": "slider",
+                    "step": 0.05
                 }),
                 "random_shot": ("BOOLEAN", {"default": False}),
                 "random_gender": ("BOOLEAN", {"default": False}),
